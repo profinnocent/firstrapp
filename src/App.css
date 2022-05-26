@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
 }
 
 .App-logo {
@@ -35,4 +38,442 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+/* ------------Header starts-------------------------------------*/
+.header{
+  border-right: 1px solid rgba(230, 226, 226,0.5) ;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/* ------------Header ends-------------------------------------*/
+
+/* ------------Navigation starts-------------------------------------*/
+.logo{
+  width: 30px;
+  display: flex;
+  align-self: flex-start;
+}
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+
+}
+
+#nav div{
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav div p{
+  margin: 0 10px;
+}
+
+#tweetbtn{
+  padding: 15px 80px;
+  background-color: #46c3f1;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#tweetpostbtn{
+  padding: 10px 30px;
+  background-color: #46c3f1;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navigation li{
+  list-style: none;
+margin: 5px 10px;
+border-radius: 50px;
+padding: 5px 20px;
+}
+
+.navigation li:hover{
+  background-color: #e6e2e2;
+}
+
+.navigation .logoli:hover{
+ background-color: rgb(255, 255, 255);
+} 
+
+.navigation li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  display: flex;
+align-items: center;
+}
+
+.navigation li img{
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.navigation li img:hover{
+  background-color: #e6e2e2;
+  cursor: pointer;
+}
+
+.profilearea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+border-radius: 50px;
+margin: 20px 10px;
+padding: 5px;
+}
+
+.profilearea:hover{
+  background-color: #e6e2e2;
+  cursor: pointer;
+}
+
+.profilearea img{
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #46c3f1;
+
+}
+
+.profilearea p{
+ color: grey;
+ display: flex;
+ justify-content: flex-start;
+}
+
+/* ------------Navigation ends-------------------------------------*/
+
+/* ------------Trends starts-------------------------------------*/
+.trendsarea{
+  border-left: 1px solid rgba(230, 226, 226,0.5) ;
+  height: 100%;
+width: 30%;
+padding: 20px;
+}
+
+.trendsarea .searchbox{
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+
+.trendsarea .searchbox > div {
+  position: relative;
+  background-color: rgb(231, 236, 238);
+border-radius: 25px;
+padding: 10px 20px;
+display: flex;
+/* align-items: center; */
+}
+
+.trendsarea .searchbox input{
+  width: 90%;
+  outline: none;
+  border: none;
+  background: transparent;
+  
+  }
+
+ .trendsarea .searchbox img{
+width: 20px;
+margin-right: 8px;
+}
+
+.trendsarea .trends{
+  padding: 5px 10px;
+text-align: left;
+background-color: rgb(239, 243, 245);
+border-radius: 20px;
+}
+
+.trendsarea .trends h2{
+  padding: 5px 20px;
+text-align: left;
+border-bottom: 1px solid rgba(190, 171, 171,0.5);
+
+}
+
+.trendsarea .trends .trend{
+  padding: 5px 20px;
+text-align: left;
+border-radius: 10px;
+margin: 10px auto;
+}
+
+.trendsarea .trends .trend:hover{
+  background-color: rgb(223, 217, 217);
+  cursor: pointer;
+}
+
+.trendsarea .trends .trend .trendtop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.trendsarea .trends .trend .trendtop img{
+ width: 20px;
+}
+
+.trendsarea .trends .trend .trendtop img:hover{
+  background-color: #46c3f1;
+border-radius: 50%;
+padding: 10px;
+cursor: pointer;
+ }
+
+/* ------------Trends ends-------------------------------------*/
+
+/* ------------Tweets starts-------------------------------------*/
+.tweets{
+  width: 45%;
+}
+
+.tweets:hover{
+  background-color: white;
+  cursor: pointer;
+ }
+
+
+
+/* ------------Tweets ends-------------------------------------*/
+
+/* ------------Timeline starts-------------------------------------*/
+
+.headpost .post img{
+  width: 50px;
+  border-radius: 50%;
+  background-color: #46c3f1;
+  padding: 5px;
+}
+
+.headpost .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.headpost .top img{
+width: 20px;
+}
+
+.headpost .top img:hover{
+  border-radius: 50%;
+  background-color: #46c3f1;
+  padding: 5px;
+cursor: pointer;
+  }
+
+.headpost .bottom{
+  display: flex;
+  width: 90%;
+  padding: 5px 20px;
+  /* justify-content: space-between; */
+}
+
+.headpost .bottom .post{
+margin-right: 10px;
+}
+
+.headpost .bottom .others{
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+
+  .headpost .bottom .others .writeup{
+display: flex;
+margin-top: 10px;
+padding-bottom: 10px;
+border-bottom: 1px solid rgb(230, 226, 226);
+  }
+  
+  .headpost .bottom .others textarea{
+  outline: navajowhite;
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(255, 251, 251);
+  border-radius: 5px;
+  font-size: 18px;
+      }
+
+.headpost .writeup{
+  width: 50%;
+  padding: 5px;
+  border-radius: 25px;
+  }      
+
+.headpost .writeup:hover{
+  cursor: pointer;
+  background-color: #c7e9f3;
+  }
+
+.headpost .writeup img{
+  width: 20px;
+  margin-right: 5px;
+  }
+
+  .headpost .writeup span{
+   color: #46c3f1;
+    }
+
+    .headpost .bottom .others .postbtns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0px;
+    }
+
+    .headpost .bottom .others .postbtns img{
+      width: 20px;
+      margin: 5px 10px;
+    }
+
+    .headpost .bottom .others .postbtns img:hover{
+      cursor: pointer;
+    }
+
+    .headpost .bottom .others .postbtns .pbtns .tooltip1:hover .tp1{
+      visibility: visible;
+    }
+
+    .headpost .bottom .others .postbtns .pbtns .tooltip2:hover .tp2{
+      visibility: visible;
+    }
+
+    .headpost .bottom .others .postbtns .pbtns .tooltip3:hover .tp3{
+      visibility: visible;
+    }
+
+    .headpost .bottom .others .postbtns .pbtns .tooltip4:hover .tp4{
+      visibility: visible;
+    }
+ 
+.headpost .postbtns .pbtns .tooltip {
+  position: relative;
+}    
+
+.headpost .tp{
+  visibility: hidden;
+  position: absolute;
+top: 30px;
+left: -20px;
+background-color: #61dafb;
+padding: 10px;
+border-radius: 10px;
+} 
+
+.tweets .tweetscreen{
+  border-top: 1px solid rgb(230, 226, 226);
+  border-bottom: 1px solid rgb(230, 226, 226);
+  color: #46c3f1;
+padding: 20px;
+}
+
+.tweets .tweetbox .tweet{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 0;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+margin: 20px auto;
+}
+
+.tweets .tweetbox .tweet:hover{
+background-color: #ecf0f7; 
+border-radius: 10px;
+}
+
+.tweets .tweetbox .tweet h5 span{
+  color: rgb(143, 133, 133);
+}
+
+.tweets .tweetbox img{
+  width: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(96, 161, 235);
+  grid-row: span 2;
+}
+
+.tweets .tweetbox h5{
+  grid-column: span 5;
+  text-align: left;
+}
+
+.tweets .tweetbox p{
+  grid-column: span 5;
+  text-align: left;
+}
+
+
+/* ------------Timeline ends-------------------------------------*/
+
+/* ------------Media Query Starts here-------------------------------------*/
+@media (max-width:576px){
+.header{
+  width: auto%;
+}
+
+.navigation ul li a span{
+  display: none;
+}
+
+.profilearea div{
+  display: none;
+}
+
+.profilearea img{
+  height: 50px;
+}
+
+#tweetbtn{
+  padding: 5px;
+  border-radius: 50%;
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+}
+
+.trendsarea{
+display: none;
+}
+
+.tweets{
+  width: 85%;
+}
+
 }
