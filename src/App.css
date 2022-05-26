@@ -443,7 +443,7 @@ border-radius: 10px;
 /* ------------Media Query Starts here-------------------------------------*/
 @media (max-width:576px){
 .header{
-  width: auto%;
+  width: auto;
 }
 
 .navigation ul li a span{
