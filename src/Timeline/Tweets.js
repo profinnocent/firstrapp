@@ -11,12 +11,7 @@ import Radiobtnclass from "../Navigation/Radiobtnclass";
 function Tweets() {
   let noOfTweets = 1230;
 
-  let [txValue , setTxValue] = useState("What's happening now?");
   const [check, setCheck] = useState(false)
- 
-   const handleChange = (e) => {
-         setTxValue(e.target.value);
-   };
  
    const handleToggle = () => {
      setCheck(!check);
