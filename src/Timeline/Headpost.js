@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Navigation/Button";
 
+
 function Headpost() {
-    const showAlert = () => {
+  const [txValue ,setTxValue] = useState("What's happening now?");
+
+ const handleClick = () => {
         alert('posted');
-      }
+        setTxValue("");
+      };
+
+  const handleChange = (e) => {
+        setTxValue(e.target.value);
+  };     
 
   return (
     <div className="headpost">
@@ -28,6 +36,8 @@ function Headpost() {
           id="comment"
           cols="30"
           rows="3"
+          onChange={handleChange}
+          value={txValue}
           placeholder="What's happening?"
         ></textarea>
 
@@ -66,8 +76,10 @@ function Headpost() {
           <Button 
           text="Tweet" 
           idn="tweetpostbtn"
-          onclick={showAlert}
+          onClick={handleClick}
           />
+         
+
         </div>
       </div>
       </div>

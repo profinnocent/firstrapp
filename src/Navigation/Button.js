@@ -1,12 +1,11 @@
 import React from 'react'
 
-function Button({text, idn, onclick}) {
-
+function Button({text, idn, onClick}) {
   return (
     <div >
       <button 
       id={idn} 
-      onClick={onclick}>{text}
+      onClick={onClick}>{text}
       </button>
     </div>
   )

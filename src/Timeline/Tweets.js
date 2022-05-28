@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Headpost from "./Headpost";
 import Tweeet from "./Tweeet";
 import Tweet from "./Tweet";
 import Tweetclockclass from "./Tweetclockclass";
+import Checkbox from "../Navigation/Checkbox";
+import Checkboxclass from "../Navigation/Checkboxclass";
+import Radiobtnclass from "../Navigation/Radiobtnclass";
+
 
 function Tweets() {
   let noOfTweets = 1230;
+
+  let [txValue , setTxValue] = useState("What's happening now?");
+  const [check, setCheck] = useState(false)
+ 
+   const handleChange = (e) => {
+         setTxValue(e.target.value);
+   };
+ 
+   const handleToggle = () => {
+     setCheck(!check);
+     alert('Checkbox toggled');
+   }
 
   return (
     <div className="tweets">
@@ -15,6 +31,21 @@ function Tweets() {
       <div className="tweetscreen">
         <p>Show {noOfTweets} tweets</p>
         <Tweetclockclass />
+      <div className="checkboxes">
+        <Checkbox 
+          onChange={handleToggle}
+          checked={check}
+          />
+
+          <Checkboxclass 
+          // checkz={true}
+          />
+
+          <Radiobtnclass />
+          <Radiobtnclass />
+          <Radiobtnclass />
+
+          </div>
       </div>
 
 
