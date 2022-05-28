@@ -2,7 +2,6 @@ import React from "react";
 import Headpost from "./Headpost";
 import Tweeet from "./Tweeet";
 import Tweet from "./Tweet";
-import Tweetclock from "./Tweetclock";
 import Tweetclockclass from "./Tweetclockclass";
 
 function Tweets() {
@@ -15,7 +14,6 @@ function Tweets() {
     {/* Show No of Tweets section */}
       <div className="tweetscreen">
         <p>Show {noOfTweets} tweets</p>
-        <Tweetclock />
         <Tweetclockclass />
       </div>
 
