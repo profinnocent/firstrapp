@@ -4,7 +4,7 @@ function Searchbox() {
   return (
     <div className='searchbox'>
       <div>
-      <img src="https://cdn-icons.flaticon.com/png/128/3158/premium/3158119.png?token=exp=1653573748~hmac=1b0f1450bc95cab16669ccb7364d95ff" alt="handglass" />
+      <img src="https://cdn-icons-png.flaticon.com/128/7638/7638027.png" alt="handglass" />
       <input type="text" placeholder="Search twitter"/>
       </div>
     </div>

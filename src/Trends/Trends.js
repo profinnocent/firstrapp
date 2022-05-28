@@ -1,6 +1,7 @@
 import React from "react";
 import Searchbox from "./Searchbox";
 
+
 function Trends() {
   return (
     <div className="trendsarea">

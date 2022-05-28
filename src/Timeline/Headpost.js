@@ -43,12 +43,12 @@ function Headpost() {
         <div className="postbtns">
             <div className="pbtns">
                 <span className="tooltip tooltip1">
-          <img src="https://cdn-icons.flaticon.com/png/128/4904/premium/4904233.png?token=exp=1653571200~hmac=1cea3c43087f34ce42e2fde20286f584" alt="pix" />
+          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160157.png" alt="pix" />
           <span className="tp tp1">upload image</span>
           </span>
 
           <span className="tooltip tooltip2">
-          <img src="https://cdn-icons.flaticon.com/png/128/739/premium/739170.png?token=exp=1653580333~hmac=4980b1d1ab269befbde00a50f14d335d" alt="GIF" />
+          <img src="https://cdn-icons-png.flaticon.com/128/1372/1372755.png" alt="GIF" />
           <span className="tp tp2">upload gif</span>
           </span>
 
