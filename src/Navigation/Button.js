@@ -1,5 +1,4 @@
 import React from 'react'
-import './Button.css';
 
 function Button({text, idn, onclick}) {
 
@@ -13,4 +12,4 @@ function Button({text, idn, onclick}) {
   )
 }
 
-export default Button
+export default Button;
