@@ -26,8 +26,8 @@ clocktick(){
     render(){
         return (
             <div>
-            <h1>Hello World</h1>
-            <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+            <h3>Hello Twitterites</h3>
+            <h2>It's {this.state.date.toLocaleTimeString()}.</h2>
             </div>
         );
     }

@@ -3,44 +3,9 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
+  width: 100vw;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 
 /* ------------Header starts-------------------------------------*/
 .header{
@@ -79,17 +44,6 @@
   margin: 0 10px;
 }
 
-#tweetbtn{
-  padding: 15px 80px;
-  background-color: #46c3f1;
-  outline: none;
-  border: none;
-  border-radius: 25px;
-  color: whitesmoke;
-  font-size: 18px;
-  font-weight: 600;
-}
-
 #tweetpostbtn{
   padding: 10px 30px;
   background-color: #46c3f1;
@@ -101,12 +55,25 @@
   font-weight: 600;
 }
 
+#tweetbtn{
+  padding: 15px 80px;
+  background-color: #46c3f1;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+ 
 .navigation li{
   list-style: none;
 margin: 5px 10px;
 border-radius: 50px;
 padding: 5px 20px;
-background-color: aqua;
+/* background-color: aqua; */
 }
 
 .navigation li:hover{
@@ -266,6 +233,9 @@ cursor: pointer;
 /* ------------Tweets ends-------------------------------------*/
 
 /* ------------Timeline starts-------------------------------------*/
+.headpost{
+  /* width: 70%; */
+}
 
 .headpost .post img{
   width: 50px;
@@ -314,8 +284,10 @@ margin-right: 10px;
   .headpost .bottom .others .writeup{
 display: flex;
 margin-top: 10px;
-padding-bottom: 10px;
 border-bottom: 1px solid rgb(230, 226, 226);
+width: 60%;
+padding: 5px;
+border-radius: 25px;
   }
   
   .headpost .bottom .others textarea{
@@ -326,12 +298,6 @@ border-bottom: 1px solid rgb(230, 226, 226);
   border-radius: 5px;
   font-size: 18px;
       }
-
-.headpost .writeup{
-  width: 50%;
-  padding: 5px;
-  border-radius: 25px;
-  }      
 
 .headpost .writeup:hover{
   cursor: pointer;
@@ -400,6 +366,11 @@ border-radius: 10px;
 padding: 20px;
 }
 
+/* .tweets .tweetbox{
+  display: flex;
+  flex-direction: column;
+} */
+
 .tweets .tweetbox .tweet{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -407,7 +378,7 @@ grid-template-rows: 1fr 1fr;
 gap: 0;
 justify-content: center;
 align-items: center;
-padding: 10px 20px;
+padding: 10px 5px;
 margin: 20px auto;
 }
 
@@ -442,16 +413,14 @@ border-radius: 10px;
 /* ------------Timeline ends-------------------------------------*/
 
 /* ------------Media Query Starts here-------------------------------------*/
-@media (max-width:576px){
+@media screen and (max-width:576px){
 .header{
-  width: auto;
+  width: 70px;
 }
 
 .navigation ul li{
-margin: 5px 0;
-border-radius: 50%;
-padding: 5px;
-background-color: aqua;
+padding: 0px;
+/* background-color: aqua; */
 }
 
 .navigation li img{
@@ -489,7 +458,7 @@ display: none;
 }
 
 .tweets{
-  width: 85%;
+  width: auto;
 }
 
 }

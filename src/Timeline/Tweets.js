@@ -15,7 +15,6 @@ function Tweets() {
     {/* Show No of Tweets section */}
       <div className="tweetscreen">
         <p>Show {noOfTweets} tweets</p>
-        <Tweetclock />
         <Tweetclockclass />
       </div>
 
