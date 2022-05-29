@@ -3,7 +3,7 @@ import Button from "../Navigation/Button";
 
 
 function Headpost() {
-  const [txValue ,setTxValue] = useState("What's happening now?");
+  const [txValue ,setTxValue] = useState("");
 
  const handleClick = () => {
         alert('posted');
