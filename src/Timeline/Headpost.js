@@ -1,17 +1,34 @@
 import React, { useState } from "react";
 import Button from "../Navigation/Button";
+// import Buttonclass from "../Navigation/Buttonclass";
 
 
-function Headpost() {
-  const [txValue ,setTxValue] = useState("");
+function Headpost(props) {
+  const [txValue, setTxValue] = useState("");
+  const [buttonid, setButtonID] = useState("tweetpostbtn");
 
  const handleClick = () => {
         alert('posted');
         setTxValue("");
+        setButtonID("tweetpostbtn");
+        let newtweetz = {
+          tweetid: props.tweetz.length + `${Math.floor(Math.random()*100)}`,
+          userpix: `https://randomuser.me/api/portraits/men/${Math.floor(Math.random()*100)}.jpg`,
+          username:"New Guy",
+          userhandle: `@new_guy"${Math.floor(Math.random()*100)}`,
+          timeelapsed: "12d",
+          comment: txValue
+        };
+        props.setTweetz([...props.tweetz, newtweetz]);
       };
+
+  // const handleDoubleClick = () => {
+  //   alert('Double Click Tweet Button');
+  // };    
 
   const handleChange = (e) => {
         setTxValue(e.target.value);
+        setButtonID("tweetpostbtn2");
   };     
 
   return (
@@ -39,7 +56,9 @@ function Headpost() {
           onChange={handleChange}
           value={txValue}
           placeholder="What's happening?"
-        ></textarea>
+        >
+          
+        </textarea>
 
         <div className="writeup">
           <img
@@ -73,12 +92,19 @@ function Headpost() {
           </span>
 
           </div>
+          
           <Button 
-          text="Tweet" 
-          idn="tweetpostbtn"
-          onClick={handleClick}
+          buttontext="Tweet" 
+          buttonid={buttonid}
+          buttonClick={handleClick}
+         //buttonDclick={handleDoubleClick}
           />
          
+         {/* <Buttonclass 
+         buttontext="Tweet" 
+         buttonid={buttonid}
+         buttonClick={handleClick}
+         /> */}
 
         </div>
       </div>

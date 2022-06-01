@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 
 function Tweet({username, userpix, userhandle, timeelapsed, comment}) {
@@ -16,10 +16,10 @@ function Tweet({username, userpix, userhandle, timeelapsed, comment}) {
   return (
     <div className="tweet">
     <img src={userpix} alt="" />
-    <h5>{username} <span>{userhandle}</span><h6>{timeelapsed}</h6> </h5>
+    <h5>{username} <span>{userhandle}</span><span><b>{timeelapsed}</b></span> </h5>
     <p>{comment}</p>
   </div>
   )
 }
 
-export default Tweet
+export default Tweet;

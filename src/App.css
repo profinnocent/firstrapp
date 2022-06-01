@@ -55,6 +55,17 @@
   font-weight: 600;
 }
 
+#tweetpostbtn2{
+  padding: 10px 30px;
+  background-color: #2835f1;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 #tweetbtn{
   padding: 15px 80px;
   background-color: #46c3f1;

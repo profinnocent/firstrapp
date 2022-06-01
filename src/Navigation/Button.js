@@ -1,11 +1,14 @@
 import React from 'react'
 
-function Button({text, idn, onClick}) {
+function Button({buttontext, buttonid, buttonClick, buttonDclick}) {
   return (
     <div >
       <button 
-      id={idn} 
-      onClick={onClick}>{text}
+      id={buttonid} 
+      onClick={buttonClick}      
+      onDoubleClick={buttonDclick}
+      >
+        {buttontext || "Button"}
       </button>
     </div>
   )

@@ -3,15 +3,16 @@ import Profilearea from "./Profilearea";
 import Navigation from "./Navigation";
 
 function Header() {
-    const showAlert = () => {
-      alert('clciked');
+    const show = () => {
+      alert('Functionn component button Header clicked');
     }
     return (
         <div className="header">
             <Navigation />
-            <Button text="Tweet"
-            idn="tweetbtn"
-            onclick={showAlert}
+            <Button 
+            buttontext="Tweet"
+            buttonid="tweetbtn"
+            buttonClick={show}
             />
             <Profilearea />
 
